@@ -17,14 +17,6 @@ const Navbar = () => {
         <div className="wrapper">
          <div className="left">
           <div className="item">
-            <img src="/images/en.png" alt=""/>
-            <KeyboardArrowDownIcon />
-          </div>
-          <div className="item">
-            <span>GBP</span>
-            <KeyboardArrowDownIcon />
-          </div>
-          <div className="item">
             <Link className="link" to="/products/women">Women</Link>
           </div>
           <div className="item">
@@ -38,9 +30,6 @@ const Navbar = () => {
           <Link className="link" to="/">PEDROSTORE</Link>
          </div>
          <div className="right">
-         <div className="item">
-          <Link className="link" to="/">Homepage</Link>
-         </div>
          <div className="item">
           <Link className="link" to="/">About</Link>
          </div>
