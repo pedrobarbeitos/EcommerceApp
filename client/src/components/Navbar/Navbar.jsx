@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {useState} from "react";
+import Cart from '../../components/Cart/Cart';
 
 //Mui Imports
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -12,6 +14,9 @@ import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
 import "./Navbar.scss"
 
 const Navbar = () => {
+
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="navbar">
         <div className="wrapper">
@@ -43,7 +48,7 @@ const Navbar = () => {
           <SearchIcon/>
           <PersonOutlineOutlinedIcon/>
           <FavoriteBorderOutlinedIcon/>
-          <div className="cartIcon">
+          <div className="cartIcon" onClick={()=>setOpen(!open)}>
             <ShoppingCartRoundedIcon/>
             <span>0</span>
           </div>
@@ -51,6 +56,7 @@ const Navbar = () => {
          </div>
          </div>
         </div>
+        {open && <Cart/>}
     </div>
   );
 };
