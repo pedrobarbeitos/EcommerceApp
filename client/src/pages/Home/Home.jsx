@@ -8,9 +8,7 @@ import Contact from '../../components/Contact/Contact';
 function Home() {
   return (
     <div className="home">
-      <Slider />
       <FeaturedProducts type="featured"/>
-      
       <FeaturedProducts type="trending"/>
       <Contact />
     </div>
