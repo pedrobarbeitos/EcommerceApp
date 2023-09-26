@@ -36,7 +36,8 @@ function FeaturedProducts({type}) {
   return (
     <div className="featuredProducts">
         <div className="top">
-                 </div>
+            <h1>{type} products</h1>
+          </div>
         <div className="bottom">
             {data.map(item => (
                 <Card item={item} key={item.id}/>
